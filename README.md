@@ -6,4 +6,5 @@
 
 
 
-# GET WIFI PASSWORD - " cat /etc/NetworkManager/system-connections/[SSID] | grep psk= "
+# GET WIFI PASSWORD
+  " cat /etc/NetworkManager/system-connections/[SSID] | grep psk= "
