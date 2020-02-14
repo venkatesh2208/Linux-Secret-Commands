@@ -29,3 +29,10 @@
 
 # KILLS A PROCESS THAT IS LOCKING A FILE
   > fuser -k [filename]
+
+# FINF THE DUPLICATE FILES BASED ON SIZE FIRST, THEN MD5 HASH
+  >find -not -empty =type f -printf "%s\n" | sort -rn | uniq -d | xargs - I{} -n1 find -type f -size {}c -print0 | xargs -0 md5sum | sort | uniq -w32 -all-repeated-separate
+ 
+# ACCESS GOOGLE TRANSLATE IN TERMINAL
+  > translate(){ wget -q0- "https://ajax.googleapis.com/ajax/servces/language/translate?v=1.0&q=$1&langpair=$2|${3:-en}" | sed 's/.*trasnlatedText":"\([^"]*\)".*}/\1\n/';}
+  
