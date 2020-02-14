@@ -1,1 +1,9 @@
-# Linux-Secret-Commands
+# LINUX SECRET COMMANDS 
+
+# BELOW ARE THE SOME OF THE SIMPLE AND ADVANCED COMMAND THAT YOU CAN TRY ON YOU LINUX SYSTEM
+
+
+
+
+
+# GET WIFI PASSWORD - " cat /etc/NetworkManager/system-connections/[SSID] | grep psk= "
