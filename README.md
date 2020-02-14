@@ -20,3 +20,12 @@
  
 # LIST DIRECTORIES ONLY
   >ls -d */
+
+# WATCH YOUR NETWORK SERVICE ACTIVITY IN REAL-TIME
+  >lsof -i
+  
+# ESCAPE ANY COMMAND ALIASES
+  >/[command]
+
+# KILLS A PROCESS THAT IS LOCKING A FILE
+  > fuser -k [filename]
